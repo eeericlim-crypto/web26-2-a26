@@ -1,101 +1,185 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alegria</title>
+    <title>DS 홈페이지</title>
     <style>
-        h1{
-            color:white;
-            background:black;
-            text-align: center;
+        h1 {
+            color: black;
+            background-color: paleturquoise;
         }
-        h2{
-            color: orange;
-            text-align: center;
-        }
-        a{
-            text-decoration: none;
-            text-align: center;
-        }
-        .a_conter{
-            text-align: center;
-        }
+
+        h2:active { color: rgb(0, 110, 255);}
+
+        a {text-decoration: none;}
     </style>
 </head>
+
 <body>
-    <h1>Alegria의 홈페이지입니다.</h1><br>
+    <div id="main-page">
+        <header id="main-header">
+            <hgroup>
+                <h1><b>DS 홈페이지에 오신 것을 환영합니다!</b></h1>
+            </hgroup>
 
-    <h2>3주차</h2>
-    <div class="a_conter"><a href="Chapter3/Text_header.html">Text_header.html</a><br>
-    <a href="Chapter3/Text_content.html">Text_content.html</a><br>
-    <a href="Chapter3/Text_anchor.html">Text_anchor.html</a><br>
-    <a href="Chapter3/nested_list.html">nested_list.html</a><br>
-    <a href="Chapter3/Table_basic.html">Table_basic.html</a><br>
-    <a href="Chapter3/table_cell.html">table_cell.html</a><br>
-    <a href="Chapter3/table_span.html">table_span.html</a><br>
-    <a href="Chapter3/image_basic.html">image_basic.html</a><hr>
-    </div>
+            <img src="https://media.tfnmobile.com/wp-content/uploads/2025/11/chiitowel7_charaimg.png" width="450">
+        </header>
 
-    <h2>4주차</h2>
-    <div class="a_conter"><a href="Chapter4/form_basic.html">form_basic.html</a><br>
-    <a href="chapter4/form_selectBasic.html">form_selectBasic.html</a><br>
-    <a href="Chapter4/note_formLabel.html">note_formLabel.html</a><br>
-    <a href="Chapter4/note_textarea.html">note_textarea.html</a><br>
-    <a href="Chapter4/space_block.html">space_block.html</a><br>
-    <a href="Chapter4/space_semanticless.html">space_semanticless.html</a><hr>
-    </div>
+        <hr>
+        <nav id="main=navi">
+            <h2>목차</h2>
+            <input type="button" value="과제물"><br>
+            <input type="button" value="오늘의 저녁 메뉴 추천"><br>
+            <input type="button" value="전공 시간표"><br>
+        </nav>
 
+        <section id="main-section">
+            <hr>
+            <h2>과제물</h2>
+            <span class="chapter-title">
+                <h3>과제-종합예제</h3>
+            <ul>
+                <li class="inner-menu"><a href="ch5_layout.html">레이아웃 구조</a></li>
+            </ul>
+            <span class="chapter-title">
+                <h3>챕터3</h3>
+            </span>
+            <ul>
+                <li class="inner-menu"><a href="chapter3/Text_Header.html">텍스트 헤더</a></li>
+                <li class="inner-menu"><a href="chapter3/3text_content.html">텍스트</a></li>
+                <li class="inner-menu"><a href="chapter3/nested_list.html">리스트</a></li>
+                <li class="inner-menu"><a href="chapter3/Text.anchor.html">앵커태그</a></li>
+                <li class="inner-menu"><a href="chapter3/select_anchor.html">앵커태그 선택</a></li>
+                <li class="inner-menu"><a href="chapter3/table_basic.html">테이블 태그-표</a></li>
+                <li class="inner-menu"><a href="table_span.html">테이블 태그-속성</a></li>
+                <li class="inner-menu"><a href="table_cell.html">테이블 태그-셀</a></li>
+                <li class="inner-menu"><a href="image_basic.html">이미지, 오디오 삽입</a></li>
+            </ul>
 
-    <h2>5주차</h2>
-    <div class="a_conter"><a href="Chapter5/selector_tagclass.html">selector_tagclass.html</a><br>
-    <a href="Chapter5/attribute_basic.html">attribute_basic.html</a><br>
-    <a href="Chapter5/desc_descendants.html">desc_descendants.html</a><br>
-    <a href="Chapter5/desc_tableWithChilderen.html">desc_tableWithChilderen.html</a><br>
-    <a href="Chapter5/etc_action.html">etc_action.html</a><br>
-    <a href="Chapter5/etc_structure.html">etc_structure.html</a><br>
-    <a href="Chapter5/CSS3Unit_basic.html">CSS3Unit_basic.html</a><hr>
-    </div>
+            <span class="chapter-title">
+                <h3>챕터4</h3>
+            </span>
+            <ul>
+                <li class="inner-menu"><a href="chapter4/form_basic.html">기본 입력양식</a></li>
+                <li class="inner-menu"><a href="chapter4/form_selectbasic.html">옵션 선택</a></li>
+                <li class="inner-menu"><a href="chapter4/note_form.html">입력 선택</a></li>
+                <li class="inner-menu"><a href="chapter4/note_textarea.html">textarea 태그</a></li>
+                <li class="inner-menu"><a href="chapter4/space_block.html">공간 블록 분할</a></li>
+                <li class="inner-menu"><a href="chapter4/space_semanticless.html">시맨틱 태그</a></li>
+            </ul>
 
-    <h2>6주차</h2>
-    <div class="a_conter"><a href="Chapter6/1_box_widthHeight.html">1_box_widthHeight.html</a><br>
-    <a href="Chapter6/5border_basic.html">5border_basic.html</a><br>
-    <a href="Chapter6/8display_none.html">8display_none.html</a><br>
-    <a href="Chapter6/14background_image.html">14background_image.html</a><br>
-    <a href="Chapter6/19background_repeatNone.html">19background_repeatNone.html</a><br>
-    <a href="Chapter6/24font_size.html">24font_size.html</a><br>
-    <a href="Chapter6/28font_styleWeight.html">28font_styleWeight.html</a><br>
-    <a href="Chapter6/34position_absolute.html">34position_absolute.html</a><br>
-    <a href="Chapter6/37position_fomulaBasic.html">37position_fomulaBasic.html</a><br>
-    <a href="Chapter6/43float_basic.html">43float_basic.html</a><br>
-    <a href="Chapter6/48shadow_textShadow.html">48shadow_textShadow.html</a><hr>
-    </div>
+            <span class="chapter-title">
+                <h3>챕터5</h3>
+            </span>
+            <ul>
+                <li class="inner-menu"><a href="chapter5/selector_tagidclass.html">선택자 태그, ID, 클래스</a></li>
+                <li class="inner-menu"><a href="chapter5/attribute_basic.html">속성 선택자</a></li>
+                <li class="inner-menu"><a href="chapter5/desc_descendants.html">후손 선택자, 자식 선택자</a></li>
+                <li class="inner-menu"><a href="chapter5/etc_action.html">반응 선택자</a></li>
+                <li class="inner-menu"><a href="chapter5/etc_structure.html">구조 선택자</a></li>
+                <li class="inner-menu"><a href="chapter5/etc_structureFalse.html">구조 선택자(오류 수정)</a></li>
+                <li class="inner-menu"><a href="chapter5/CSS3unit_basic.html">CSS3 단위</a></li>
+            </ul>
 
-    <h2>7주차</h2>
-    <div class="a_conter">
-        <a href="Chapter7/1floatWithOverflow1.html">1floatWithOverflow1.html</a><br>
-        <a href="Chapter7/2noteclear.html">2noteclear.html</a><br>
-        <a href="Chapter7/3marginWidth.html">3marginWidth.html</a><br>
-        <a href="Chapter7/4oneTrueLayout.html">4oneTrueLayout.html</a><br>
-        <a href="Chapter7/5note_flex.html">5note_flex.html</a><br>
-        <a href="Chapter7/6absolutePosition.html">6absolutePosition.html</a><br>
-        <a href="Chapter7/7absolutePosition_align.html">7absolutePosition_align.html</a><br>
-        <a href="Chapter7/8fixedBar.html">8fixedBar.html</a><br>
-        <a href="Chapter7/9ellipsis.html">9ellipsis.html</a><br>
+            <h3>챕터6</h3>
+            </span>
+            <ul>
+                <li class="inner-menu"><a href="chapter_6/1_box_widthHeight.html">박스 속성</a></li>
+                <li class="inner-menu"><a href="chapter_6/5border_basic.html">속성 테두리</a></li>
+                <li class="inner-menu"><a href="chapter_6/8display_none.html">가시 속성</a></li>
+                <li class="inner-menu"><a href="chapter_6/14backgounrd_image.html">배경 속성</a></li>
+                <li class="inner-menu"><a href="chapter_6/19backgounrd_image.html">배경 속성 삽입</a></li>
+                <li class="inner-menu"><a href="chapter_6/24font_size.html">폰트 크기</a></li>
+                <li class="inner-menu"><a href="chapter_6/28font_styleWeight.html">폰트 스타일</a></li>
+                <li class="inner-menu"><a href="chapter_6/34position_absolute.html">박스</a></li>
+                <li class="inner-menu"><a href="chapter_6/37position_fomulaBasic.html">위치</a></li>
+                <li class="inner-menu"><a href="chapter_6/43float_basic.html">float 속성</a></li>
+                <li class="inner-menu"><a href="chapter_6/48shadow_textShadow.html">그림자 속성</a></li>
+            </ul>
 
-    <h2>8주차</h2>
-    <div class="a_conter"><a href="Chapter8/1without_meta.html">1without_meta.html</a><br>
-        <a href="Chapter8/2_1note_meta">2_1note_meta.html</a><br>
-        <a href="Chapter8/3at_media_rule.html">3at_media_rule.html</a><br>
-        <a href="Chapter8/4media_attribute.html">4media_attribute.html</a><br>
-        <a href="Chapter8/7media_feature.html">7media_feature.html</a><br>
-        <a href="Chapter8/8orientation.html">8orientation.html</a><br>
-        <a href="Chapter8/9pattern1.html">9pattern1.html</a><br>
-        <a href="Chapter8/10pattern2.html">10pattern2.html</a><br>
-        <a href="Chapter8/11pattern3.html">11pattern3.html</a><br>
-        <a href="Chapter8/12pattern4.html">12pattern4.html</a><br>
-        
-        
-    </div>
+            <h3>챕터7</h3>
+            </span>
+            <ul>
+                <li class="inner-menu"><a href="chapter_7/1floatWithOverflow1.html">수평정렬 레이아웃</a></li>
+                <li class="inner-menu"><a href="chapter_7/2noteclear.html">수평정렬 레이아웃(클리어)</a></li>
+                <li class="inner-menu"><a href="chapter_7/3marginWidth.html">중앙정렬 레이아웃</a></li>
+                <li class="inner-menu"><a href="chapter_7/4oneTrueLayout.html">OneTrue 레이아웃</a></li>
+                <li class="inner-menu"><a href="chapter_7/5note_flext.html">OneTrue 레이아웃 flex</a></li>
+                <li class="inner-menu"><a href="chapter_7/6absolutePosition.html">요소 배치</a></li>
+                <li class="inner-menu"><a href="chapter_7/7absolutePosition_align.html">요소 중앙 배치</a></li>
+                <li class="inner-menu"><a href="chapter_7/8fixedBar.html">고정 바</a></li>
+                <li class="inner-menu"><a href="chapter_7/9ellipsis.html">글자 생략</a></li>
+            </ul>
+
+            <span class="chapter-title">
+                <h3>챕터8</h3>
+            </span>
+            <ul>
+                <li class="inner-menu"><a href="chapter4/form_basic.html">기본 입력양식</a></li>
+                <li class="inner-menu"><a href="chapter4/form_selectbasic.html">옵션 선택</a></li>
+                <li class="inner-menu"><a href="chapter4/note_form.html">입력 선택</a></li>
+                <li class="inner-menu"><a href="chapter4/note_textarea.html">textarea 태그</a></li>
+                <li class="inner-menu"><a href="chapter4/space_block.html">공간 블록 분할</a></li>
+                <li class="inner-menu"><a href="chapter4/space_semanticless.html">시맨틱 태그</a></li>
+            </ul>
+
+        </section>
+
+        <hr>
+        <h2>오늘의 저녁 메뉴 추천</h2>
+        <select>
+            <optgroup label="한식">
+                <option>비빔밥</option>
+                <option>된장찌개</option>
+                <option>제육볶음</option>
+            </optgroup>
+            <optgroup label="양식">
+                <option>피자</option>
+                <option>파스타</option>
+            </optgroup>
+            <optgroup label="일식">
+                <option>초밥</option>
+                <option>우동</option>
+            </optgroup>
+        </select>
+
+        <hr>
+        <h2>전공 시간표</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>월</th>
+                    <th>화</th>
+                    <th>수</th>
+                    <th>목</th>
+                    <th>금</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>오전</td>
+                    <td></td>
+                    <td>보안코딩</td>
+                    <td>정보보호개론</td>
+                </tr>
+                <tr>
+                    <td>오후</td>
+                    <td>데이터베이스</td>
+                    <td>프론트엔드웹개발</td>
+                    <td>이산수학</td>
+                </tr>
+            </tbody>
+        </table>
+        </section>
+
+        <hr>
+        <footer>
+            <h3>2026102374 1학년 1반 임성윤</h3>
+        </footer>
+
 </body>
+
 </html>
